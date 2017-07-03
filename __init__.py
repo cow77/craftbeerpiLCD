@@ -23,7 +23,7 @@ def get_ip_address(ifname):
 
 ##Background Task to load the data
 @cbpi.backgroundtask(key="lcdjob", interval=1)
-def lcdjob():
+def lcdjob(self):
     ## YOUR CODE GOES HERE
     s = cbpi.cache.get("active_step")
     
